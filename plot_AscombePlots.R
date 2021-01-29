@@ -2,10 +2,14 @@
 Plots the Anscombe’s quartet (http://en.wikipedia.org/wiki/Anscombe%27s_quartet)
 
 TODO:
-- add pearson correlation values 
-- make background lighter
-- add title
-- make lines thinner
+- add pearson correlation values  DONE
+- make background lighter DONE
+- add title DONE
+- make lines thinner DONE
+
+This plot is used to discuss possible spurious correlation between 
+accuracy and certain task attributes like explanation size and difficulty.
+
 
 "
 library(ggplot2)
