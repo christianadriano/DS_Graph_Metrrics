@@ -54,15 +54,9 @@ plot <- ggplot(anscombe_tidy, aes(x, y)) +
   facet_wrap(~ set) +
   theme_minimal()+
   annotate("text", x = 15, y = 6, label = "italic(R) == 0.816",parse=TRUE)+
-  geom_smooth(method = "lm",linetype=2, size=0.1,se = FALSE)
-
-png(".\\output\\ascombes_quadrants.png")
-print(plot)
-dev.off()
+  geom_smooth(method = "lm",linetype=2, size=0.3,se = FALSE)
 
 ggsave(dpi=300, filename = ".\\output\\ascombes_quadrants.png")
-
-plot.savePlot(filename = ,type = "png")
 
 cor.test(anscombe_tidy$x,anscombe_tidy$y,method="pearson",alternative =
     "two.sided")
